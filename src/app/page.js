@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import React from 'react';
+import Button from "../../components/Button";
 
 export default function Home() {
   return (
@@ -39,8 +41,7 @@ export default function Home() {
         />
       </div>
       <div className={styles.center}>
-      <button
-        onClick={console.log("clicked!")}>Click Me</button>
+      <Button label="Click me" onClick={()=>{alert('Button clicked!');}} />
       </div>
 
       <div className={styles.grid}>
