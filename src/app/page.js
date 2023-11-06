@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import Button from 'react';
 
 export default function Home() {
   return (
@@ -40,11 +39,8 @@ export default function Home() {
         />
       </div>
       <div className={styles.center}>
-      <Button
-        onPress={() => {console.log("clicked")}}
-        title="Click Me"
-        color="#841584"
-      />
+      <button
+        onClick={console.log("clicked!")}>Click Me</button>
       </div>
 
       <div className={styles.grid}>
